@@ -5,7 +5,7 @@ import java.util.Collections;
 public class HandsOnArrayList {
     ArrayList<String> students = new ArrayList<>();
 
-    public HandsOnArrayList(){
+    public HandsOnArrayList() {
 
     }
 

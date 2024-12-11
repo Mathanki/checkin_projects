@@ -1,12 +1,10 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Array List Pratice:");        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.println("Array List Pratice:");
         HandsOnArrayList handsOnArrayList = new HandsOnArrayList();
         System.out.println("Print added names in list:");
         ArrayList<String> students = handsOnArrayList.addName();
@@ -19,7 +17,9 @@ public class Main {
         System.out.println();
 
         System.out.println("Print sorted names in list:");
-        students = handsOnArrayList.sortList(students);
+       // students = handsOnArrayList.sortList(students);
+        // Sort the list using the external comparator
+        Collections.sort(students, new NameComparator());
         handsOnArrayList.printNames(students);
         System.out.println();
 
