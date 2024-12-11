@@ -17,6 +17,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Print sorted names in list:");
+        //sorts its elements based on their natural ordering
        // students = handsOnArrayList.sortList(students);
         // Sort the list using the external comparator
         Collections.sort(students, new NameComparator());
