@@ -6,12 +6,6 @@ import java.util.Scanner;
 
 public class WeatheNewrReader {
 
-    public void checkFileExists(File file) throws WeatherFileNotFoundException {
-        if (!file.exists()) {
-            throw new WeatherFileNotFoundException("Weather file not found!");
-        }
-    }
-
     public void readFileAsBytes(String filePath) {
         try (FileInputStream inputStream = new FileInputStream(filePath)) {
             int byteRead;
