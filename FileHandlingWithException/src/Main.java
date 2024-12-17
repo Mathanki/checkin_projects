@@ -3,6 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
+        /**
         WeatherReader weatherReader = new WeatherReader();
         try{
             weatherReader.processWeatherFile("F:\\Per Scholas\\workspace\\CheckinProjects\\FileHandlingWithException\\weather.txt");
@@ -10,6 +11,14 @@ public class Main {
         catch(Exception ex){
             ex.printStackTrace();
         }
+**/
+        WeatheNewrReader weatheNewrReader = new WeatheNewrReader();
+        try{
+            weatheNewrReader.processWeatherNewFile();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+
 
     }
 }
